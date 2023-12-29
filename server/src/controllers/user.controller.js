@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-import UserModel from "../models/user.model.js";
+import UserModel from "../models/UserModel.js";
 import responseHandler from "../handlers/response.handler.js";
 
 class UserController {

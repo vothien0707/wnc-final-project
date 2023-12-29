@@ -47,7 +47,7 @@ class ReportController {
     }
   }
 
-  async getReportOfUser(req, res) {
+  async getReportsOfUser(req, res) {
     try {
       if (req.user) {
         const reportList = await ReportModel.find({
