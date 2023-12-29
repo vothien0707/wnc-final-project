@@ -16,4 +16,4 @@ app.use(cookieParser());
 app.use(cors());
 
 // Connect MongoDB
-dbConfig.connect("mongodb://localhost:27017/ads-management", server, port);
+dbConfig.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/ads-management", server, port);
